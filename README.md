@@ -25,6 +25,23 @@ rules:
   - RULE-SET,AI,AI
 ```
 
+## 新增规则
+
+在仓库根目录放 YAML 文件，格式和 `ai_rules.yaml` 保持一致：
+
+```yaml
+payload:
+  - DOMAIN-SUFFIX,example.com
+  - IP-CIDR,1.2.3.4/32,no-resolve
+```
+
+然后在 Mihomo 配置中添加对应的 `rule-providers` 和 `rules` 条目即可。
+
+### 命名规范
+
+- `xxx_rules.yaml` — classical 格式，含域名和 IP 规则
+- `xxx_domains.list` — 纯域名列表，用于 behavior: domain
+
 ## 覆盖服务
 
 | 服务 | 标签 | 规则数 |
