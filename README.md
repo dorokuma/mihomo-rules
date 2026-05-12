@@ -1,16 +1,17 @@
-# Mihomo Rules — AI Services
+# Mihomo Rules — 分流规则集
 
-Grok + Gemini + Claude + ChatGPT（OpenAI）四家 AI 服务的 Mihomo/Clash Meta 分流规则集。
+Mihomo / Clash Meta 分流规则集，每个服务独立一个文件。
 
-## 规则文件
+## 规则列表
 
-| 文件 | 格式 | behavior | 说明 |
-|------|------|----------|------|
-| `ai_rules.yaml` | yaml | classical | AI 服务完整规则集（域名 + IP） |
+**ai_rules.yaml** — AI 服务
+Grok + Gemini + Claude + ChatGPT（OpenAI）四家 AI 的分流规则，含域名和 IP。
+
+更多规则按需添加，每个服务一个独立文件。
 
 ## 使用方式
 
-在 Mihomo 配置中引用：
+在 Mihomo 配置中通过 `rule-providers` 引用：
 
 ```yaml
 rule-providers:
@@ -25,17 +26,34 @@ rules:
   - RULE-SET,AI,AI
 ```
 
+需要引用多个规则时，每个服务对应一个 `rule-providers` 条目和一条 `RULE-SET` 规则。
+
 ## 新增规则
 
-在仓库根目录放 YAML 文件，格式和 `ai_rules.yaml` 保持一致：
+需要加新服务时，在仓库根目录新建一个独立的 YAML 文件。
+
+例如新增 Netflix 规则 `netflix_rules.yaml`：
 
 ```yaml
 payload:
-  - DOMAIN-SUFFIX,example.com
+  - DOMAIN-SUFFIX,netflix.com
   - IP-CIDR,1.2.3.4/32,no-resolve
 ```
 
-然后在 Mihomo 配置中添加对应的 `rule-providers` 和 `rules` 条目即可。
+然后在 Mihomo 配置中添加对应的引用：
+
+```yaml
+rule-providers:
+  Netflix:
+    type: http
+    behavior: classical
+    format: yaml
+    url: "https://raw.githubusercontent.com/dorokuma/mihomo-rules/main/netflix_rules.yaml"
+    interval: 86400
+
+rules:
+  - RULE-SET,Netflix,Netflix
+```
 
 ### 命名规范
 
@@ -44,12 +62,11 @@ payload:
 
 ## 覆盖服务
 
-| 服务 | 标签 | 规则数 |
-|------|------|--------|
-| 🤖 ChatGPT（OpenAI） | OpenAI | 35 |
-| 🎨 Claude（Anthropic） | Claude | 3 |
-| 🌀 Grok（xAI） | Grok | 5 |
-| ✨ Gemini（Google） | Gemini | 46 |
+**ai_rules.yaml** 目前包含：
+- 🤖 ChatGPT（OpenAI）— 35 条规则
+- 🎨 Claude（Anthropic）— 3 条规则
+- 🌀 Grok（xAI）— 5 条规则
+- ✨ Gemini（Google）— 46 条规则
 
 ## 数据来源
 
