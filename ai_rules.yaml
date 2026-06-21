@@ -68,6 +68,7 @@ payload:
   - DOMAIN-SUFFIX,streetviewpixels-pa.googleapis.com
   - DOMAIN-SUFFIX,content-autofill.googleapis.com
   - DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
+  - DOMAIN-SUFFIX,daily-cloudcode-pa.googleapis.com
   - DOMAIN-SUFFIX,www.gstatic.com
   - DOMAIN-SUFFIX,fonts.gstatic.com
   - DOMAIN-SUFFIX,ssl.gstatic.com
@@ -90,6 +91,7 @@ payload:
   - DOMAIN-SUFFIX,ogs.google.com
   - DOMAIN-SUFFIX,generativeai.google
   - DOMAIN-SUFFIX,gemini.google
+  - DOMAIN-SUFFIX,antigravity-unleash.goog
   - DOMAIN-SUFFIX,gemini.google.com
   - DOMAIN-SUFFIX,www.google-analytics.com
   - DOMAIN-SUFFIX,static.doubleclick.net
