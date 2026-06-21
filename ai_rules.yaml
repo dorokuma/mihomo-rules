@@ -66,9 +66,11 @@ payload:
   - DOMAIN-SUFFIX,jnn-pa.googleapis.com
   - DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
   - DOMAIN-SUFFIX,streetviewpixels-pa.googleapis.com
+  - DOMAIN-SUFFIX,play.googleapis.com
   - DOMAIN-SUFFIX,content-autofill.googleapis.com
   - DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
   - DOMAIN-SUFFIX,daily-cloudcode-pa.googleapis.com
+  - DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
   - DOMAIN-SUFFIX,www.gstatic.com
   - DOMAIN-SUFFIX,fonts.gstatic.com
   - DOMAIN-SUFFIX,ssl.gstatic.com
