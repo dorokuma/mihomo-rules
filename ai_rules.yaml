@@ -1,7 +1,7 @@
 # AI + Google + Meta Services Rules for Mihomo/Clash Meta
 # Comprehensive: Google family (incl. all ccTLDs), Meta family, foreign AI
 # Replaces previous OpenAI/Claude/Grok/Gemini-only list
-# Last updated: 2026-05-26
+# Last updated: 2026-11-07
 
 payload:
 
@@ -53,6 +53,14 @@ payload:
   - DOMAIN-SUFFIX,cloudfunctions.net
   - DOMAIN-SUFFIX,firebasedynamiclinks.com
   - DOMAIN-SUFFIX,web.app
+  - DOMAIN-SUFFIX,firebasestorage.app
+  - DOMAIN-SUFFIX,appspot.com
+  - DOMAIN-SUFFIX,dialogflow.com
+  - DOMAIN-SUFFIX,apigee.com
+  - DOMAIN-SUFFIX,looker.com
+  - DOMAIN-SUFFIX,mandiant.com
+  - DOMAIN-SUFFIX,virustotal.com
+  - DOMAIN-SUFFIX,postini.com
   - DOMAIN-SUFFIX,fuchsia.dev
   - DOMAIN-SUFFIX,golang.org
   - DOMAIN-SUFFIX,golang.com
@@ -82,6 +90,28 @@ payload:
   - DOMAIN-SUFFIX,waze.com
   - DOMAIN-SUFFIX,pagead2.googlesyndication.com
 
+  # --- Google dev / open source ---
+  - DOMAIN-SUFFIX,go.dev
+  - DOMAIN-SUFFIX,dartlang.org
+  - DOMAIN-SUFFIX,dart.dev
+  - DOMAIN-SUFFIX,flutter.dev
+  - DOMAIN-SUFFIX,tensorflow.org
+  - DOMAIN-SUFFIX,tensorboard.org
+  - DOMAIN-SUFFIX,polymer-project.org
+  - DOMAIN-SUFFIX,web.dev
+  - DOMAIN-SUFFIX,v8.dev
+  - DOMAIN-SUFFIX,fastlane.tools
+  - DOMAIN-SUFFIX,bazel.build
+  - DOMAIN-SUFFIX,devsite.dev
+  - DOMAIN-SUFFIX,protobuf.dev
+  - DOMAIN-SUFFIX,angular.io
+  - DOMAIN-SUFFIX,angular.dev
+  - DOMAIN-SUFFIX,material.io
+  - DOMAIN-SUFFIX,openweave.org
+  - DOMAIN-SUFFIX,opensourceinsights.dev
+  - DOMAIN-SUFFIX,webstatus.dev
+  - DOMAIN-SUFFIX,chromedriver.org
+
   # --- Google AI ---
   - DOMAIN-SUFFIX,gemini.google
   - DOMAIN-SUFFIX,gemini.google.com
@@ -92,6 +122,7 @@ payload:
   - DOMAIN-SUFFIX,generativeai.google
   - DOMAIN-SUFFIX,deepmind.com
   - DOMAIN-SUFFIX,deepmind.google
+  - DOMAIN-SUFFIX,alphago.ai
   - DOMAIN-SUFFIX,generativelanguage.googleapis.com
   - DOMAIN-SUFFIX,alkali-pa.googleapis.com
   - DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
@@ -148,6 +179,67 @@ payload:
   - DOMAIN-SUFFIX,x.team
   - DOMAIN-SUFFIX,466453.com
 
+  # --- Alphabet subsidiaries ---
+  - DOMAIN-SUFFIX,wing.com
+  - DOMAIN-SUFFIX,verily.com
+  - DOMAIN-SUFFIX,calicolabs.com
+  - DOMAIN-SUFFIX,isomorphiclabs.com
+  - DOMAIN-SUFFIX,intrinsic.ai
+
+  # --- Android / hardware ---
+  - DOMAIN-SUFFIX,androidtv.com
+  - DOMAIN-SUFFIX,wearos.com
+  - DOMAIN-SUFFIX,chromecast.com
+  - DOMAIN-SUFFIX,chromebook.com
+  - DOMAIN-SUFFIX,dropcam.com
+  - DOMAIN-SUFFIX,fitbit.com
+  - DOMAIN-SUFFIX,fitbitstatic.com
+  - DOMAIN-SUFFIX,fitbitpay.com
+
+  # --- Google ads / measurement / infra ---
+  - DOMAIN-SUFFIX,adwords.com
+  - DOMAIN-SUFFIX,dartsearch.net
+  - DOMAIN-SUFFIX,invitemedia.com
+  - DOMAIN-SUFFIX,admeld.com
+  - DOMAIN-SUFFIX,channelintelligence.com
+  - DOMAIN-SUFFIX,urchin.com
+  - DOMAIN-SUFFIX,2mdn.net
+  - DOMAIN-SUFFIX,googlebot.com
+  - DOMAIN-SUFFIX,gvt0.com
+  - DOMAIN-SUFFIX,gvt5.com
+  - DOMAIN-SUFFIX,gvt6.com
+  - DOMAIN-SUFFIX,gvt7.com
+  - DOMAIN-SUFFIX,gvtr1.com
+  - DOMAIN-SUFFIX,re-captcha.com
+  - DOMAIN-SUFFIX,certificate-transparency.org
+
+  # --- Google consumer & content ---
+  - DOMAIN-SUFFIX,feedburner.com
+  - DOMAIN-SUFFIX,picasa.com
+  - DOMAIN-SUFFIX,picasaweb.com
+  - DOMAIN-SUFFIX,panoramio.com
+  - DOMAIN-SUFFIX,snapseed.com
+  - DOMAIN-SUFFIX,youtubekids.com
+  - DOMAIN-SUFFIX,youtubegaming.com
+  - DOMAIN-SUFFIX,youtubeeducation.com
+  - DOMAIN-SUFFIX,youtubego.com
+  - DOMAIN-SUFFIX,yt.be
+  - DOMAIN-SUFFIX,widevine.com
+  - DOMAIN-SUFFIX,youtubefanfest.com
+  - DOMAIN-SUFFIX,youtubeartists.com
+  - DOMAIN-SUFFIX,youtube-creator-community.com
+
+  # --- Google brand gTLDs ---
+  - DOMAIN-SUFFIX,google
+  - DOMAIN-SUFFIX,goog
+  - DOMAIN-SUFFIX,gle
+  - DOMAIN-SUFFIX,gmail
+  - DOMAIN-SUFFIX,chrome
+  - DOMAIN-SUFFIX,youtube
+  - DOMAIN-SUFFIX,dclk
+  - DOMAIN-SUFFIX,gbiz
+  - DOMAIN-SUFFIX,guge
+
   # --- Google ccTLD matrix ---
   - DOMAIN-SUFFIX,google.ad
   - DOMAIN-SUFFIX,google.ae
@@ -176,6 +268,7 @@ payload:
   - DOMAIN-SUFFIX,google.bs
   - DOMAIN-SUFFIX,google.bt
   - DOMAIN-SUFFIX,google.bw
+  - DOMAIN-SUFFIX,google.co.bw
   - DOMAIN-SUFFIX,google.by
   - DOMAIN-SUFFIX,google.com.bz
   - DOMAIN-SUFFIX,google.ca
@@ -189,6 +282,8 @@ payload:
   - DOMAIN-SUFFIX,google.cl
   - DOMAIN-SUFFIX,google.cm
   - DOMAIN-SUFFIX,google.com.cn
+  - DOMAIN-SUFFIX,google.cn
+  - DOMAIN-SUFFIX,google.com.co
   - DOMAIN-SUFFIX,google.co.cr
   - DOMAIN-SUFFIX,google.com.cu
   - DOMAIN-SUFFIX,google.cv
@@ -205,8 +300,10 @@ payload:
   - DOMAIN-SUFFIX,google.com.eg
   - DOMAIN-SUFFIX,google.es
   - DOMAIN-SUFFIX,google.et
+  - DOMAIN-SUFFIX,google.com.et
   - DOMAIN-SUFFIX,google.fi
   - DOMAIN-SUFFIX,google.fj
+  - DOMAIN-SUFFIX,google.com.fj
   - DOMAIN-SUFFIX,google.fm
   - DOMAIN-SUFFIX,google.fr
   - DOMAIN-SUFFIX,google.ga
@@ -234,7 +331,9 @@ payload:
   - DOMAIN-SUFFIX,google.is
   - DOMAIN-SUFFIX,google.it
   - DOMAIN-SUFFIX,google.je
+  - DOMAIN-SUFFIX,google.com.jm
   - DOMAIN-SUFFIX,google.com.jo
+  - DOMAIN-SUFFIX,google.jo
   - DOMAIN-SUFFIX,google.co.jp
   - DOMAIN-SUFFIX,google.co.ke
   - DOMAIN-SUFFIX,google.com.kh
@@ -257,20 +356,24 @@ payload:
   - DOMAIN-SUFFIX,google.me
   - DOMAIN-SUFFIX,google.mg
   - DOMAIN-SUFFIX,google.com.mk
+  - DOMAIN-SUFFIX,google.mk
   - DOMAIN-SUFFIX,google.ml
   - DOMAIN-SUFFIX,google.com.mm
   - DOMAIN-SUFFIX,google.mn
   - DOMAIN-SUFFIX,google.ms
   - DOMAIN-SUFFIX,google.com.mt
   - DOMAIN-SUFFIX,google.mu
+  - DOMAIN-SUFFIX,google.mv
   - DOMAIN-SUFFIX,google.mw
   - DOMAIN-SUFFIX,google.com.mx
   - DOMAIN-SUFFIX,google.com.my
   - DOMAIN-SUFFIX,google.co.mz
   - DOMAIN-SUFFIX,google.com.na
+  - DOMAIN-SUFFIX,google.ne
   - DOMAIN-SUFFIX,google.com.nf
   - DOMAIN-SUFFIX,google.com.ng
   - DOMAIN-SUFFIX,google.ni
+  - DOMAIN-SUFFIX,google.com.ni
   - DOMAIN-SUFFIX,google.nl
   - DOMAIN-SUFFIX,google.no
   - DOMAIN-SUFFIX,google.com.np
@@ -303,6 +406,8 @@ payload:
   - DOMAIN-SUFFIX,google.si
   - DOMAIN-SUFFIX,google.sk
   - DOMAIN-SUFFIX,google.sl
+  - DOMAIN-SUFFIX,google.com.sl
+  - DOMAIN-SUFFIX,google.sm
   - DOMAIN-SUFFIX,google.sn
   - DOMAIN-SUFFIX,google.so
   - DOMAIN-SUFFIX,google.sr
@@ -324,6 +429,7 @@ payload:
   - DOMAIN-SUFFIX,google.com.ua
   - DOMAIN-SUFFIX,google.co.ug
   - DOMAIN-SUFFIX,google.co.uk
+  - DOMAIN-SUFFIX,google.com.uy
   - DOMAIN-SUFFIX,google.co.uz
   - DOMAIN-SUFFIX,google.com.vc
   - DOMAIN-SUFFIX,google.co.ve
@@ -378,6 +484,71 @@ payload:
   - DOMAIN-SUFFIX,atlassbx.com
   - DOMAIN-SUFFIX,novi.com
   - DOMAIN-SUFFIX,crowdtangle.com
+
+  # --- Meta group / careers ---
+  - DOMAIN-SUFFIX,metacareers.com
+  - DOMAIN-SUFFIX,metagallery.com
+  - DOMAIN-SUFFIX,metaworkplace.com
+  - DOMAIN-SUFFIX,work.meta.com
+
+  # --- Facebook infra & brand ---
+  - DOMAIN-SUFFIX,fbinfra.net
+  - DOMAIN-SUFFIX,fbrep.net
+  - DOMAIN-SUFFIX,fbreg.com
+  - DOMAIN-SUFFIX,fbthirdpartypixel.com
+  - DOMAIN-SUFFIX,fbthirdpartypixel.net
+  - DOMAIN-SUFFIX,fbx.com
+  - DOMAIN-SUFFIX,tfbnw.net
+  - DOMAIN-SUFFIX,thefacebook.com
+  - DOMAIN-SUFFIX,facebookrecruiting.com
+  - DOMAIN-SUFFIX,facebooksafety.com
+  - DOMAIN-SUFFIX,facebookbrand.com
+
+  # --- Meta connectivity ---
+  - DOMAIN-SUFFIX,freebasics.com
+  - DOMAIN-SUFFIX,internet.org
+  - DOMAIN-SUFFIX,expresswifi.com
+
+  # --- Instagram ---
+  - DOMAIN-SUFFIX,igsonar.com
+
+  # --- WhatsApp ---
+  - DOMAIN-SUFFIX,whatsapp.biz
+  - DOMAIN-SUFFIX,whatsappbrand.com
+
+  # --- Messenger ---
+  - DOMAIN-SUFFIX,m.me
+
+  # --- Meta VR / Workrooms ---
+  - DOMAIN-SUFFIX,horizonworkrooms.com
+  - DOMAIN-SUFFIX,workrooms.com
+  - DOMAIN-SUFFIX,within.com
+  - DOMAIN-SUFFIX,supernatural.com
+
+  # --- Meta dev / open source ---
+  - DOMAIN-SUFFIX,react.dev
+  - DOMAIN-SUFFIX,reactjs.org
+  - DOMAIN-SUFFIX,flow.org
+  - DOMAIN-SUFFIX,docusaurus.io
+  - DOMAIN-SUFFIX,jestjs.io
+  - DOMAIN-SUFFIX,relay.dev
+  - DOMAIN-SUFFIX,rocksdb.org
+  - DOMAIN-SUFFIX,componentkit.org
+  - DOMAIN-SUFFIX,pyre-check.org
+  - DOMAIN-SUFFIX,buck.build
+  - DOMAIN-SUFFIX,draftjs.org
+  - DOMAIN-SUFFIX,yoga.dev
+  - DOMAIN-SUFFIX,fresco-lib.org
+
+  # --- Meta ads / enterprise / acquisitions ---
+  - DOMAIN-SUFFIX,atlasdsk.com
+  - DOMAIN-SUFFIX,atlassolutions.com
+  - DOMAIN-SUFFIX,liverail.com
+  - DOMAIN-SUFFIX,mapillary.com
+  - DOMAIN-SUFFIX,wit.ai
+  - DOMAIN-SUFFIX,onavo.com
+  - DOMAIN-SUFFIX,redkix.com
+  - DOMAIN-SUFFIX,accountkit.com
 
   # --- Foreign AI services ---
   - DOMAIN-SUFFIX,openai.com
