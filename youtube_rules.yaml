@@ -1,0 +1,23 @@
+# YouTube Rules for Mihomo/Clash Meta
+# YouTube 专属域名（纯 YouTube 用，与 AI/Gemini 无重合）
+# 注意：googlevideo.com / ggpht.com / ytimg.l.google.com 同时为 Google/AI 依赖，
+#       保留在 ai_rules.yaml 中走 AI 组，本文件不重复收录。
+# Last updated: 2026-11-08
+
+payload:
+  # --- YouTube core ---
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,youtube-nocookie.com
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,yt.be
+  - DOMAIN-SUFFIX,youtube
+
+  # --- YouTube 子品牌 ---
+  - DOMAIN-SUFFIX,youtubekids.com
+  - DOMAIN-SUFFIX,youtubegaming.com
+  - DOMAIN-SUFFIX,youtubeeducation.com
+  - DOMAIN-SUFFIX,youtubego.com
+  - DOMAIN-SUFFIX,youtubefanfest.com
+  - DOMAIN-SUFFIX,youtubeartists.com
+  - DOMAIN-SUFFIX,youtube-creator-community.com

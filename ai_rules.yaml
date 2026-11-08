@@ -35,10 +35,6 @@ payload:
   - DOMAIN-SUFFIX,googlezip.net
   - DOMAIN-SUFFIX,recaptcha.net
   - DOMAIN-SUFFIX,googledomains.com
-  - DOMAIN-SUFFIX,youtube.com
-  - DOMAIN-SUFFIX,youtu.be
-  - DOMAIN-SUFFIX,youtube-nocookie.com
-  - DOMAIN-SUFFIX,ytimg.com
   - DOMAIN-SUFFIX,ytimg.l.google.com
   - DOMAIN-SUFFIX,android.com
   - DOMAIN-SUFFIX,androidify.com
@@ -219,15 +215,7 @@ payload:
   - DOMAIN-SUFFIX,picasaweb.com
   - DOMAIN-SUFFIX,panoramio.com
   - DOMAIN-SUFFIX,snapseed.com
-  - DOMAIN-SUFFIX,youtubekids.com
-  - DOMAIN-SUFFIX,youtubegaming.com
-  - DOMAIN-SUFFIX,youtubeeducation.com
-  - DOMAIN-SUFFIX,youtubego.com
-  - DOMAIN-SUFFIX,yt.be
   - DOMAIN-SUFFIX,widevine.com
-  - DOMAIN-SUFFIX,youtubefanfest.com
-  - DOMAIN-SUFFIX,youtubeartists.com
-  - DOMAIN-SUFFIX,youtube-creator-community.com
 
   # --- Google brand gTLDs ---
   - DOMAIN-SUFFIX,google
@@ -235,7 +223,6 @@ payload:
   - DOMAIN-SUFFIX,gle
   - DOMAIN-SUFFIX,gmail
   - DOMAIN-SUFFIX,chrome
-  - DOMAIN-SUFFIX,youtube
   - DOMAIN-SUFFIX,dclk
   - DOMAIN-SUFFIX,gbiz
   - DOMAIN-SUFFIX,guge
