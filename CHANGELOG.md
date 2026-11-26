@@ -9,9 +9,5 @@ All notable changes to the Mihomo rule sets are documented here. The project fol
 ### Added
 
 - Initial tagged release of the AI and YouTube Mihomo / Clash Meta rule providers.
-- Expanded Google, Meta, OpenAI, Anthropic, xAI and YouTube domain coverage.
-- Split YouTube domains into `youtube_rules.yaml` to keep provider sets independently consumable.
-
-### Validation
-
-- Both rule files parse successfully as YAML and retain the Mihomo `payload` rule format.
+- Expanded Google, Meta, OpenAI, Anthropic, xAI, and YouTube domain coverage.
+- Split YouTube domains into `youtube_rules.yaml` so provider rule sets can be consumed independently.
