@@ -7,6 +7,9 @@ Mihomo / Clash Meta 分流规则集，每个服务独立一个文件。
 **ai_rules.yaml** — AI 服务
 Grok + Gemini + Claude + ChatGPT（OpenAI）四家 AI 的分流规则，含域名和 IP。
 
+**youtube_rules.yaml** — YouTube 服务
+YouTube 核心域名及视频流量 CDN 域名（`googlevideo.com`、`ggpht.com`、`ytimg.com` 等，已从 `ai_rules.yaml` 独立拆出）。
+
 更多规则按需添加，每个服务一个独立文件。
 
 ## 使用方式
